@@ -40,14 +40,10 @@
             }
             
         }
-        if ($compteur != 0)
-        {
-            echo "Le nombre " . $i . " est présent " . $compteur . " fois.";
-            ?>
+        
+        echo "Le nombre " . $i . " est présent " . $compteur . " fois.";
         <br>
         <?php
-        }
-        
     }
     ?>
     
