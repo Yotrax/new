@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+   <style>
+   .bordure
+{
+    color:red;
+}</style>
 </head>
 <body>
     <!--créer un tableau de 30 cases et y mettre un nombre aléatoire et y afficher le nombre de fois où chaque nombre apparait-->
@@ -41,10 +46,26 @@
             
         }
         
-        echo "Le nombre " . $i . " est présent " . $compteur . " fois.";
-        <br>
+        if ($compteur >= 2)
+        {
+            ?>
+           <p class ="bordure"> <?php echo "Le nombre " . $i . " est présent " . $compteur . " fois."; ?> </p>
+           <?php
+        }
+       
+        else
+        {
+            ?>
+            <p> <?php echo "Le nombre " . $i . " est présent " . $compteur . " fois.";?></p>
+            <?php
+        }
+        ?>
+        
+        
         <?php
     }
+
+    
     ?>
     
 
